@@ -1,0 +1,913 @@
+2018-12-06 11:11:06 Starting WebsocketApplication on DESKTOP-AQDP069 with PID 18356 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+2018-12-06 11:11:06 No active profile set, falling back to default profiles: default
+2018-12-06 11:11:07 Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-06 11:11:07 Starting service [Tomcat]
+2018-12-06 11:11:07 Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-06 11:11:07 The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;E:\go_projects\bin;.]
+2018-12-06 11:11:07 Initializing Spring embedded WebApplicationContext
+2018-12-06 11:11:08 netty启动....................
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 ConsumerConfig values: 
+	auto.commit.interval.ms = 100
+	auto.offset.reset = earliest
+	bootstrap.servers = [47.100.5.108:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = consumer-tutorial
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Kafka version : 2.0.0
+2018-12-06 11:11:08 Kafka commitId : 3402a8361b734732
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Starting ProtocolHandler ["http-nio-8080"]
+2018-12-06 11:11:08 Using a shared selector for servlet write/read
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Started WebsocketApplication in 2.624 seconds (JVM running for 3.929)
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-8, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-8, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-8, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 Cluster ID: 4zZmMS6KTqiLasQHVzdPYQ
+2018-12-06 11:11:08 [Consumer clientId=consumer-9, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-11, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-10, groupId=consumer-tutorial] Discovered group coordinator 47.100.5.108:9092 (id: 2147483647 rack: null)
+2018-12-06 11:11:08 [Consumer clientId=consumer-10, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-9, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-10, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-9, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-11, groupId=consumer-tutorial] Revoking previously assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-11, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] (Re-)joining group
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-8, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-4, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-8, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-10, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-7, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-10, groupId=consumer-tutorial] Setting newly assigned partitions [test_emq-0]
+2018-12-06 11:11:08 [Consumer clientId=consumer-9, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-9, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-5, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-3, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-2, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-11, groupId=consumer-tutorial] Successfully joined group with generation 191
+2018-12-06 11:11:08 [Consumer clientId=consumer-6, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:11:08 [Consumer clientId=consumer-11, groupId=consumer-tutorial] Setting newly assigned partitions []
+2018-12-06 11:12:23 /ggzn/ws
+2018-12-06 11:13:04 /ggzn/ws
+2018-12-06 11:20:29 /ggzn/ws
+2018-12-06 13:40:26 //ggzn/wz
+2018-12-06 13:40:44 /ggzn/wz
+2018-12-06 13:40:51 /ggzn/wz
+2018-12-06 13:41:02 /ggzn/wz
+2018-12-06 13:41:13 /ggzn/ws
+2018-12-06 13:44:08 /ggzn/ws
+2018-12-06 13:50:22 /ggzn/ws
+2018-12-06 13:52:21 Starting WebsocketApplication on DESKTOP-AQDP069 with PID 9868 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+2018-12-06 13:52:21 No active profile set, falling back to default profiles: default
+2018-12-06 13:52:22 Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-06 13:52:22 Starting service [Tomcat]
+2018-12-06 13:52:22 Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-06 13:52:22 The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;E:\go_projects\bin;.]
+2018-12-06 13:52:22 Initializing Spring embedded WebApplicationContext
+2018-12-06 13:52:22 netty启动....................
+2018-12-06 13:52:23 Stopping service [Tomcat]
+2018-12-06 13:53:04 Starting WebsocketApplication on DESKTOP-AQDP069 with PID 10744 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+2018-12-06 13:53:04 No active profile set, falling back to default profiles: default
+2018-12-06 13:53:05 Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-06 13:53:05 Starting service [Tomcat]
+2018-12-06 13:53:05 Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-06 13:53:05 The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;E:\go_projects\bin;.]
+2018-12-06 13:53:05 Initializing Spring embedded WebApplicationContext
+2018-12-06 13:53:05 netty启动....................
+2018-12-06 13:53:06 Starting ProtocolHandler ["http-nio-8080"]
+2018-12-06 13:53:06 Using a shared selector for servlet write/read
+2018-12-06 13:53:06 Started WebsocketApplication in 2.268 seconds (JVM running for 3.113)
+2018-12-06 16:55:11 Starting WebsocketApplication on DESKTOP-AQDP069 with PID 19904 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+2018-12-06 16:55:11 No active profile set, falling back to default profiles: default
+2018-12-06 16:55:12 Initializing ProtocolHandler ["http-nio-8080"]
+2018-12-06 16:55:12 Starting service [Tomcat]
+2018-12-06 16:55:12 Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-06 16:55:12 The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;C:\Program Files\lua;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;C:\Users\Think\go\bin;.]
+2018-12-06 16:55:12 Initializing Spring embedded WebApplicationContext
+2018-12-06 16:55:12 netty启动....................
+2018-12-06 16:55:13 Starting ProtocolHandler ["http-nio-8080"]
+2018-12-06 16:55:13 Using a shared selector for servlet write/read
+2018-12-06 16:55:13 Started WebsocketApplication in 2.029 seconds (JVM running for 3.693)
+[33m2018-12-06 17:00:57[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:50[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarting WebsocketApplication on DESKTOP-AQDP069 with PID 996 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+[0;39m[33m2018-12-06 17:00:57[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mSpringApplication.java:675[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mNo active profile set, falling back to default profiles: default
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardService[0;39m  [36mStarting service [Tomcat]
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardEngine[0;39m  [36mStarting Servlet Engine: Apache Tomcat/9.0.12
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.AprLifecycleListener[0;39m  [36mThe APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;C:\Program Files\lua;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;C:\Users\Think\go\bin;.]
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m  [36mInitializing Spring embedded WebApplicationContext
+[0;39m[33m2018-12-06 17:00:58[0;39m  [34mINFO [0;39m  [34mThread-6[0;39m  [34mWebScoketServer.java:44[0;39m  [32mcom.ggzn.websocket.WebScoketServer[0;39m  [36mnetty启动....................
+[0;39m[33m2018-12-06 17:00:59[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:00:59[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.tomcat.util.net.NioSelectorPool[0;39m  [36mUsing a shared selector for servlet write/read
+[0;39m[33m2018-12-06 17:00:59[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:59[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarted WebsocketApplication in 2.085 seconds (JVM running for 3.079)
+[0;39m[33m2018-12-06 17:01:18[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:50[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarting WebsocketApplication on DESKTOP-AQDP069 with PID 20280 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+[0;39m[33m2018-12-06 17:01:18[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mSpringApplication.java:675[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mNo active profile set, falling back to default profiles: default
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardService[0;39m  [36mStarting service [Tomcat]
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardEngine[0;39m  [36mStarting Servlet Engine: Apache Tomcat/9.0.12
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.AprLifecycleListener[0;39m  [36mThe APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;C:\Program Files\lua;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;C:\Users\Think\go\bin;.]
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m  [36mInitializing Spring embedded WebApplicationContext
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mThread-6[0;39m  [34mWebScoketServer.java:44[0;39m  [32mcom.ggzn.websocket.WebScoketServer[0;39m  [36mnetty启动....................
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.tomcat.util.net.NioSelectorPool[0;39m  [36mUsing a shared selector for servlet write/read
+[0;39m[33m2018-12-06 17:01:19[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:59[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarted WebsocketApplication in 2.038 seconds (JVM running for 3.146)
+[0;39m[33m2018-12-06 17:04:05[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:50[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarting WebsocketApplication on DESKTOP-AQDP069 with PID 19492 (C:\Users\Think\Desktop\websocket\target\classes started by Think in C:\Users\Think\Desktop\websocket)
+[0;39m[33m2018-12-06 17:04:05[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mSpringApplication.java:675[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mNo active profile set, falling back to default profiles: default
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mInitializing ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardService[0;39m  [36mStarting service [Tomcat]
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.StandardEngine[0;39m  [36mStarting Servlet Engine: Apache Tomcat/9.0.12
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.AprLifecycleListener[0;39m  [36mThe APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_172\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;D:\Gradle-4.8.1\bin;D:\apache-maven-3.5.4\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\Program Files\erl10.0.1\bin;C:\Program Files\go\\bin;D:\somewhere\arcanist\bin;C:\PHP;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\go\bin;C:\Program Files\lua;D:\python\Scripts\;D:\python\;C:\Users\Think\AppData\Local\Microsoft\WindowsApps;C:\Users\Think\go\bin;.]
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m  [36mInitializing Spring embedded WebApplicationContext
+[0;39m[33m2018-12-06 17:04:06[0;39m  [34mINFO [0;39m  [34mThread-6[0;39m  [34mWebScoketServer.java:44[0;39m  [32mcom.ggzn.websocket.WebScoketServer[0;39m  [36mnetty启动....................
+[0;39m[33m2018-12-06 17:04:07[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.coyote.http11.Http11NioProtocol[0;39m  [36mStarting ProtocolHandler ["http-nio-8080"]
+[0;39m[33m2018-12-06 17:04:07[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mDirectJDKLog.java:173[0;39m  [32morg.apache.tomcat.util.net.NioSelectorPool[0;39m  [36mUsing a shared selector for servlet write/read
+[0;39m[33m2018-12-06 17:04:07[0;39m  [34mINFO [0;39m  [34mmain[0;39m  [34mStartupInfoLogger.java:59[0;39m  [32mcom.ggzn.WebsocketApplication[0;39m  [36mStarted WebsocketApplication in 2.057 seconds (JVM running for 2.946)
+[0;39m
